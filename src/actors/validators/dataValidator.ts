@@ -184,6 +184,7 @@ export const dataValidatorMachine = setup({
         onDone: {
           target: 'idle',
           actions: [
+            'setValidationResults',
             reply(
               ({
                 context,
